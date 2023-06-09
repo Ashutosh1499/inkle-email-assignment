@@ -1,9 +1,0 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/tags/[tag]": "pages/tags/[tag].js",
-  "/search/[searchString]": "pages/search/[searchString].js",
-  "/": "pages/index.js",
-  "/mail/[mailId]": "pages/mail/[mailId].js"
-}
