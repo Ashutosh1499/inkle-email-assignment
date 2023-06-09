@@ -4,10 +4,10 @@ import inboxImage2 from '../../public/Images/inboxImage2.png';
 import draftImage1 from '../../public/Images/draft1.png';
 import spamImage1 from '../../public/Images/spam1.png';
 import trashImage1 from '../../public/Images/trash1.png';
-import context from '../allcontexts/context';
+import { Context } from '@axios/pages/_app';
 
 function Sidebar() {
-	const contextData = useContext(context);
+	const contextData = useContext(Context);
 	const refs = useRef(new Array());
 	const makeSidebarActive = i => {
 		refs.current.forEach(ref => {

@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import context from '@axios/pages/allcontexts/context';
+import { Context } from '@axios/pages/_app';
 import Topbar from '../../components/topbar';
 import Sidebar from '../../components/sidebar';
 import EachMail from '../../components/eachMail';
@@ -24,7 +24,7 @@ export default function Tag() {
 		contextData.setMails(response);
 		return true;
 	};
-	const contextData = useContext(context);
+	const contextData = useContext(Context);
 	const [filteredMails, setFilteredMails] = useState([]);
 	if (!contextData.fetched) {
 		fetchMails(contextData);

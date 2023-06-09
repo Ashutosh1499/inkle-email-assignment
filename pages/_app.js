@@ -1,7 +1,8 @@
 import '@axios/styles/globals.css';
-import Context from './allcontexts/context';
-import { useState } from 'react';
+import { useState, createContext } from 'react';
 import { useRouter } from 'next/router';
+
+export const Context = createContext();
 
 export default function App({ Component, pageProps }) {
 	const [mails, setMails] = useState([]);

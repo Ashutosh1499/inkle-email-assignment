@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import context from '@axios/pages/allcontexts/context';
+import { Context } from '@axios/pages/_app';
 import Topbar from '@axios/pages/components/topbar';
 import Sidebar from '@axios/pages/components/sidebar';
 import Image from 'next/image';
@@ -24,8 +24,7 @@ function Search() {
 		contextData.setMails(response);
 		return true;
 	};
-	const contextData = useContext(context);
-	// console.log(contextData.router.query.searchString);
+	const contextData = useContext(Context);
 	const fetchQuery = contextData.router.query.searchString;
 	let query = [];
 	if (fetchQuery !== undefined) query = fetchQuery.split(' ');

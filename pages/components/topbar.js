@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import Image from 'next/image';
 import searchIcon from '../../public/Images/searchIcon.png';
-import context from '../allcontexts/context';
+import { Context } from '@axios/pages/_app';
 
 function Topbar() {
-	const router = useContext(context).router;
+	const router = useContext(Context).router;
 	const [val, setVal] = useState('');
 	return (
 		<div className='header'>

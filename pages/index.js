@@ -4,11 +4,12 @@ import Image from 'next/image';
 import inboxImage1 from '../public/Images/inboxImage1.png';
 import socialImage2 from '../public/Images/social2.png';
 import Sidebar from './components/sidebar';
-import context from './allcontexts/context';
+import { Context } from './_app';
 import EachMail from './components/eachMail';
 import Topbar from './components/topbar';
 
 const MailInbox = () => {
+	console.log(Context);
 	const fetchMails = async contextData => {
 		let response = await fetch(
 			'https://run.mocky.io/v3/15a3a1c3-1cda-4409-b1b1-2f39f5f25123',
@@ -25,7 +26,7 @@ const MailInbox = () => {
 		contextData.setMails(response);
 		return true;
 	};
-	const contextData = useContext(context);
+	const contextData = useContext(Context);
 	const [flag1, setFlag1] = useState(false);
 	useEffect(() => {
 		if (!flag1) {

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext } from 'react';
 import Sidebar from '@axios/pages/components/sidebar';
-import context from '@axios/pages/allcontexts/context';
+import { Context } from '@axios/pages/_app';
 import Image from 'next/image';
 import backimage from '../../../public/Images/backimage.png';
 import Topbar from '@axios/pages/components/topbar';
@@ -23,7 +23,7 @@ function Mail() {
 		contextData.setMails(response);
 		return true;
 	};
-	const contextData = useContext(context);
+	const contextData = useContext(Context);
 	const maildata = contextData.mails[contextData.router.query.mailId];
 	if (!contextData.fetched) {
 		fetchMails(contextData);
