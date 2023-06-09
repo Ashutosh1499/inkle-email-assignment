@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import context from '@axios/pages/context/Context';
-import Topbar from '@axios/pages/topbar';
-import Sidebar from '@axios/pages/sidebar';
+import Topbar from '@axios/pages/components/topbar';
+import Sidebar from '@axios/pages/components/sidebar';
 import Image from 'next/image';
-import EachMail from '@axios/pages/eachMail';
+import EachMail from '@axios/pages/components/eachMail';
 import inboxImage1 from '../../../public/Images/inboxImage1.png';
 import socialImage2 from '../../../public/Images/social2.png';
-import { fetchMails } from '@axios/pages/microservices/fetchMails';
+import { fetchMails } from '@axios/pages/components/microservices/fetchMails';
 
 function Search() {
 	const contextData = useContext(context);

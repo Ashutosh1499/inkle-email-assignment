@@ -3,11 +3,11 @@ import { useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
 import inboxImage1 from '../public/Images/inboxImage1.png';
 import socialImage2 from '../public/Images/social2.png';
-import Sidebar from './sidebar';
+import Sidebar from './components/sidebar';
 import context from './context/Context';
-import { fetchMails } from './microservices/fetchMails';
-import EachMail from './eachMail';
-import Topbar from './topbar';
+import { fetchMails } from './components/microservices/fetchMails';
+import EachMail from './components/eachMail';
+import Topbar from './components/topbar';
 
 const MailInbox = () => {
 	const contextData = useContext(context);

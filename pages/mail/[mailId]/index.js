@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext } from 'react';
-import Sidebar from '@axios/pages/sidebar';
+import Sidebar from '@axios/pages/components/sidebar';
 import context from '@axios/pages/context/Context';
-import { fetchMails } from '@axios/pages/microservices/fetchMails';
+import { fetchMails } from '@axios/pages/components/microservices/fetchMails';
 import Image from 'next/image';
 import backimage from '../../../public/Images/backimage.png';
-import Topbar from '@axios/pages/topbar';
+import Topbar from '@axios/pages/components/topbar';
 
 function Mail() {
 	const contextData = useContext(context);
