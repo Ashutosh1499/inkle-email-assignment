@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import context from '@axios/pages/context/Context';
+import context from '@axios/pages/allcontexts/context';
 import Topbar from '@axios/pages/components/topbar';
 import Sidebar from '@axios/pages/components/sidebar';
 import Image from 'next/image';

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext } from 'react';
 import Sidebar from '@axios/pages/components/sidebar';
-import context from '@axios/pages/context/Context';
+import context from '@axios/pages/allcontexts/context';
 import Image from 'next/image';
 import backimage from '../../../public/Images/backimage.png';
 import Topbar from '@axios/pages/components/topbar';

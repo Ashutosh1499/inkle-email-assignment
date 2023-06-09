@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import context from '@axios/pages/context/Context';
+import context from '@axios/pages/allcontexts/context';
 import Topbar from '../../components/topbar';
 import Sidebar from '../../components/sidebar';
 import EachMail from '../../components/eachMail';

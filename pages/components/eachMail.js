@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import context from '../context/Context';
+import context from '../allcontexts/context';
 
-export default function EachMail({ eachMail }) {
+function EachMail({ eachMail }) {
 	const contextData = useContext(context);
 	return (
 		<div
@@ -29,3 +29,5 @@ export default function EachMail({ eachMail }) {
 		</div>
 	);
 }
+
+export default EachMail;

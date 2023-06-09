@@ -4,7 +4,7 @@ import Image from 'next/image';
 import inboxImage1 from '../public/Images/inboxImage1.png';
 import socialImage2 from '../public/Images/social2.png';
 import Sidebar from './components/sidebar';
-import context from './context/Context';
+import context from './allcontexts/context';
 import EachMail from './components/eachMail';
 import Topbar from './components/topbar';
 

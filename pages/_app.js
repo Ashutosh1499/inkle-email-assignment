@@ -1,5 +1,5 @@
 import '@axios/styles/globals.css';
-import Context from './context/Context';
+import Context from './allcontexts/context';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 

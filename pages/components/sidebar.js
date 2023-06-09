@@ -4,7 +4,7 @@ import inboxImage2 from '../../public/Images/inboxImage2.png';
 import draftImage1 from '../../public/Images/draft1.png';
 import spamImage1 from '../../public/Images/spam1.png';
 import trashImage1 from '../../public/Images/trash1.png';
-import context from '../context/Context';
+import context from '../allcontexts/context';
 
 function Sidebar() {
 	const contextData = useContext(context);

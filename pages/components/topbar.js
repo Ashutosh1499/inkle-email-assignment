@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import Image from 'next/image';
 import searchIcon from '../../public/Images/searchIcon.png';
-import context from '../context/Context';
+import context from '../allcontexts/context';
 
 function Topbar() {
 	const router = useContext(context).router;
